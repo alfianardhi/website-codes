@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import PropTypes from 'prop-types'
+import { PropTypes as T } from 'prop-types'
 
 const Button = (props) => {
   const className = [props.className]
@@ -64,19 +64,19 @@ const Button = (props) => {
 }
 
 Button.defaultProps = {
-  type: PropTypes.oneOf(['button', 'link']),
-  onClick: PropTypes.func,
-  className: PropTypes.string,
-  target: PropTypes.string,
-  isPrimary: PropTypes.bool,
-  isSmall: PropTypes.bool,
-  isLarge: PropTypes.bool,
-  isBlock: PropTypes.bool,
-  isCustom: PropTypes.bool,
-  isDisabled: PropTypes.bool,
-  isLoading: PropTypes.bool,
-  isExternal: PropTypes.bool,
-  href: PropTypes.string,
+  type: T.oneOf(['button', 'link']),
+  onClick: T.func,
+  className: T.string,
+  target: T.string,
+  isPrimary: T.bool,
+  isSmall: T.bool,
+  isLarge: T.bool,
+  isBlock: T.bool,
+  isCustom: T.bool,
+  isDisabled: T.bool,
+  isLoading: T.bool,
+  isExternal: T.bool,
+  href: T.string,
 }
 
 export default Button
