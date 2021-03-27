@@ -1,0 +1,278 @@
+@import 'fonts';
+@import 'functions';
+@import 'variables';
+@import 'mixins';
+@import 'root';
+@import 'reboot';
+@import 'type';
+@import 'images';
+@import 'code';
+@import 'grid';
+@import 'tables';
+@import 'forms';
+@import 'buttons';
+@import 'transitions';
+@import 'dropdown';
+@import 'button-group';
+@import 'input-group';
+@import 'custom-forms';
+@import 'nav';
+@import 'navbar';
+@import 'card';
+@import 'breadcrumb';
+@import 'pagination';
+@import 'badge';
+@import 'jumbotron';
+@import 'alert';
+@import 'progress';
+@import 'media';
+@import 'list-group';
+@import 'close';
+@import 'toasts';
+@import 'modal';
+@import 'tooltip';
+@import 'popover';
+@import 'carousel';
+@import 'spinners';
+@import 'utilities';
+@import 'print';
+
+@mixin transition-effect {
+  transition: all 0.4s ease;
+}
+
+body {
+  font-family: $font-base;
+  padding-top: 70px;
+}
+
+.full-screen {
+  padding: 8rem 0;
+}
+
+.small-text {
+  color: $body-font-color;
+  font-size: $small-font-size;
+  font-weight: $font-weight-bold;
+  padding: 8px 16px;
+  border-radius: 50px;
+  letter-spacing: 0.2px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+
+a {
+  font-size: $link-font-size;
+  font-weight: $font-weight-normal;
+  text-decoration: none !important;
+  @include transition-effect;
+  &:hover {
+    color: $main-color !important;
+  }
+}
+
+.navbar-brand {
+  .uil {
+    font-size: 40px;
+  }
+}
+
+// TYPOGRAPHY
+p {
+  font-size: $body-font-size;
+  font-weight: $font-weight-light;
+  line-height: 1.5;
+  color: $body-font-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $font-weight-bold;
+  letter-spacing: -1px;
+}
+
+h1 {
+  color: $h1-font-color;
+  font-size: $h1-font-size;
+  margin: 24px 0;
+}
+
+h2 {
+  color: $h2-font-color;
+  font-size: $h2-font-size;
+  font-weight: $font-weight-bold;
+}
+
+h3 {
+  color: $h3-font-color;
+}
+
+h3,
+b,
+strong {
+  font-weight: $font-weight-bold;
+}
+
+// CUSTOM BUTTON
+.custom-btn {
+  color: $main-color;
+  font-weight: $font-weight-bold;
+  border-radius: 5px;
+  padding: 13px 29px;
+  font-size: $small-font-size;
+  line-height: normal;
+  overflow: hidden;
+  @include transition-effect;
+  &:hover {
+    color: $main-color;
+  }
+  &.custom-btn-bg {
+    background: $button-color;
+    color: $text-white;
+    &:hover {
+      background: $main-color;
+      color: $text-white !important;
+    }
+  }
+}
+
+// ANIMATED TEXT
+.animated {
+  position: relative;
+}
+
+.animated-info {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+  width: 250px;
+  position: relative;
+}
+
+.animated-item {
+  color: $main-color;
+}
+
+.animated-item {
+  font-size: 32px;
+  line-height: inherit;
+  display: block;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  animation: BottomTotop 6s linear infinite 0s;
+  &:nth-child(2n + 2) {
+    animation-delay: 2s;
+  }
+  &:nth-child(3n + 3) {
+    animation-delay: 4s;
+  }
+}
+
+@keyframes BottomTotop {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+// MENU
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999999;
+  will-change: transform;
+  transition: transform 200ms linear;
+  &[class*='-unpinned'] {
+    transform: translate(0, -150%);
+  }
+
+  &[class*='-pinned'] {
+    transform: translate(0, 0);
+  }
+  &[class*='headroom--not-top'] {
+    background: $text-white;
+    // box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.09);
+    border-bottom: 1px solid #f0f0f0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.navbar-brand {
+  font-weight: $font-weight-bold;
+}
+
+.navbar-expand-sm {
+  .navbar-nav {
+    .nav-link {
+      padding: 0 20px;
+    }
+  }
+}
+
+.nav-link {
+  font-weight: $font-weight-bold;
+  font-size: 16px;
+  overflow: hidden;
+  span {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s;
+    &:before {
+      position: absolute;
+      top: 100%;
+      content: attr(data-hover);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+.navbar-light {
+  .navbar-nav {
+    .nav-link:focus,
+    .nav-link:hover {
+      color: $main-color;
+      font-weight: $font-weight-bold;
+      span {
+        transform: translateY(-100%);
+      }
+    }
+  }
+}

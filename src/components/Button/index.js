@@ -63,7 +63,7 @@ const Button = (props) => {
   )
 }
 
-Button.defaultProps = {
+Button.propTypes = {
   type: T.oneOf(['button', 'link']),
   onClick: T.func,
   className: T.string,

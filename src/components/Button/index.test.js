@@ -20,7 +20,6 @@ describe('Test for button', () => {
     expect(container.querySelector('span')).toBeInTheDocument()
   })
 
-  // TODO: check click test
   it('check onclick button', () => {
     render(<Button type='button' className='isPrimary' onClick={MOCK_SUBMIT_BUTTON}></Button>)
 
@@ -28,6 +27,36 @@ describe('Test for button', () => {
     userEvent.click(submitBtn)
 
     expect(MOCK_SUBMIT_BUTTON).toHaveBeenCalled()
+  })
+
+  test('check button primary', () => {
+    const { container } = render(<Button isPrimary></Button>)
+
+    expect(container.querySelector('button.btn-primary')).toBeInTheDocument()
+  })
+
+  test('check button large', () => {
+    const { container } = render(<Button isLarge></Button>)
+
+    expect(container.querySelector('button.btn-lg')).toBeInTheDocument()
+  })
+
+  test('check button small', () => {
+    const { container } = render(<Button isSmall></Button>)
+
+    expect(container.querySelector('button.btn-sm')).toBeInTheDocument()
+  })
+
+  test('check button block', () => {
+    const { container } = render(<Button isBlock></Button>)
+
+    expect(container.querySelector('button.btn-block')).toBeInTheDocument()
+  })
+
+  test('check button custom', () => {
+    const { container } = render(<Button isCustom></Button>)
+
+    expect(container.querySelector('button.custom-btn')).toBeInTheDocument()
   })
 })
 
