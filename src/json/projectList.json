@@ -1,24 +1,24 @@
 {
-  "detailItemList": [
+  "projectListDetail": [
     {
       "id": "123",
       "title": "Denklik Website",
       "description": "Loren ipsu whats so if you want to dosomething enefneyes pleas goo goehr",
-      "imageUrl": "/images/abc.jpg",
+      "imageUrl": "assets/images/project-image05.png",
       "listTech": "vue|laravel|mysql"
     },
     {
       "id": "234",
       "title": "Denklik Website",
       "description": "Loren ipsu whats so if you want to dosomething enefneyes pleas goo goehr",
-      "imageUrl": "/images/abc.jpg",
+      "imageUrl": "assets/images/project-image05.png",
       "listTech": "vue|laravel|mysql"
     },
     {
       "id": "345",
       "title": "Denklik Website",
       "description": "Loren ipsu whats so if you want to dosomething enefneyes pleas goo goehr",
-      "imageUrl": "/images/abc.jpg",
+      "imageUrl": "assets/images/project-image05.png",
       "listTech": "vue|laravel|mysql"
     }
   ]

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { PropTypes as T } from 'prop-types'
-// TODO: read router, do project list, search icon
+
 const Button = (props) => {
   const className = [props.className]
   if (props.isPrimary) {
