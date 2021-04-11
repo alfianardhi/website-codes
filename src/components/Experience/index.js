@@ -2,18 +2,18 @@ import React from 'react'
 
 export default function Experience() {
   return (
-    <section class='resume py-5 d-lg-flex justify-content-center align-items-center' id='resume'>
-      <div class='container'>
-        <div class='row'>
-          <div class='col-lg-6 col-12'>
-            <h2 class='mb-4'>Experiences</h2>
+    <section className='resume py-5 d-lg-flex justify-content-center align-items-center' id='resume'>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-lg-6 col-12'>
+            <h2 className='mb-4'>Experiences</h2>
 
-            <div class='timeline'>
-              <div class='timeline-wrapper'>
-                <div class='timeline-yr'>
+            <div className='timeline'>
+              <div className='timeline-wrapper'>
+                <div className='timeline-yr'>
                   <span>2019</span>
                 </div>
-                <div class='timeline-info'>
+                <div className='timeline-info'>
                   <h3>
                     <span>Project Manager</span>
                     <small>Best Studio</small>
@@ -22,11 +22,11 @@ export default function Experience() {
                 </div>
               </div>
 
-              <div class='timeline-wrapper'>
-                <div class='timeline-yr'>
+              <div className='timeline-wrapper'>
+                <div className='timeline-yr'>
                   <span>2018</span>
                 </div>
-                <div class='timeline-info'>
+                <div className='timeline-info'>
                   <h3>
                     <span>UX Designer</span>
                     <small>Digital Ace</small>
@@ -35,11 +35,11 @@ export default function Experience() {
                 </div>
               </div>
 
-              <div class='timeline-wrapper'>
-                <div class='timeline-yr'>
+              <div className='timeline-wrapper'>
+                <div className='timeline-yr'>
                   <span>2016</span>
                 </div>
-                <div class='timeline-info'>
+                <div className='timeline-info'>
                   <h3>
                     <span>UI Freelancer</span>
                   </h3>
@@ -47,11 +47,11 @@ export default function Experience() {
                 </div>
               </div>
 
-              <div class='timeline-wrapper'>
-                <div class='timeline-yr'>
+              <div className='timeline-wrapper'>
+                <div className='timeline-yr'>
                   <span>2014</span>
                 </div>
-                <div class='timeline-info'>
+                <div className='timeline-info'>
                   <h3>
                     <span>
                       Junior Designer<small>Crafted Co.</small>
@@ -63,15 +63,15 @@ export default function Experience() {
             </div>
           </div>
 
-          <div class='col-lg-6 col-12'>
-            <h2 class='mb-4 mobile-mt-2'>Educations</h2>
+          <div className='col-lg-6 col-12'>
+            <h2 className='mb-4 mobile-mt-2'>Educations</h2>
 
-            <div class='timeline'>
-              <div class='timeline-wrapper'>
-                <div class='timeline-yr'>
+            <div className='timeline'>
+              <div className='timeline-wrapper'>
+                <div className='timeline-yr'>
                   <span>2017</span>
                 </div>
-                <div class='timeline-info'>
+                <div className='timeline-info'>
                   <h3>
                     <span>Mobile Web</span>
                     <small>Master Design</small>
@@ -80,11 +80,11 @@ export default function Experience() {
                 </div>
               </div>
 
-              <div class='timeline-wrapper'>
-                <div class='timeline-yr'>
+              <div className='timeline-wrapper'>
+                <div className='timeline-yr'>
                   <span>2015</span>
                 </div>
-                <div class='timeline-info'>
+                <div className='timeline-info'>
                   <h3>
                     <span>User Interfaces</span>
                     <small>Creative Agency</small>
@@ -93,11 +93,11 @@ export default function Experience() {
                 </div>
               </div>
 
-              <div class='timeline-wrapper'>
-                <div class='timeline-yr'>
+              <div className='timeline-wrapper'>
+                <div className='timeline-yr'>
                   <span>2013</span>
                 </div>
-                <div class='timeline-info'>
+                <div className='timeline-info'>
                   <h3>
                     <span>Artwork Design</span>
                     <small>New Art School</small>

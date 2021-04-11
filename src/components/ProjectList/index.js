@@ -1,48 +1,32 @@
 import React from 'react'
-import ImageProject from 'assets/images/project-image05.png'
-// TODO: split tech stack, load bug img
+
+import ProjectStack from 'components/ProjectStack'
+
 export default function ProjectList(props) {
   return (
-    <section class='py-5 d-lg-flex justify-content-center align-items-center project-section' id='project'>
-      <div class='container'>
-        <div class='row'>
-          <div class='col-lg-11 text-center mx-auto col-12'>
-            <div class='col-lg-8 mx-auto'>
+    <section className='py-5 d-lg-flex justify-content-center align-items-center project-section' id='project'>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-lg-11 text-center mx-auto col-12'>
+            <div className='col-lg-8 mx-auto'>
               <h2>Things I have developed for various project</h2>
             </div>
-            <div class='project-list'>
+            <div className='project-list'>
               {props.data.map((item, index) => {
+                let tectStack = item.listTech.split('|')
                 return (
-                  <a href='/'>
-                    <div class='project-box'>
-                      <div class='project-img' style={{ backgroundImage: `url(${item.imageUrl})` }}></div>
-                      <div class='px-5 py-5'>
-                        <h5>Denklik Website</h5>
-                        <p>Loren ipsu whats so if you want to dosomething enefneyes pleas goo goehr</p>
+                  <a href={item.projectUrl} key={index}>
+                    <div className='project-box'>
+                      <img className='project-img' src={item.imageUrl} alt={item.title} />
+                      <div className='px-5 py-5'>
+                        <h5>{item.title}</h5>
+                        <p>{item.description}</p>
                       </div>
-                      <div class='project-stack px-5 py-5'>
-                        <span>vue</span>
-                        <span>laravel</span>
-                        <span>mysql</span>
-                      </div>
+                      <ProjectStack data={tectStack} />
                     </div>
                   </a>
                 )
               })}
-              <a href='/'>
-                <div class='project-box'>
-                  <div class='project-img' style={{ backgroundImage: `url(${ImageProject})` }}></div>
-                  <div class='px-5 py-5'>
-                    <h5>Denklik Website</h5>
-                    <p>Loren ipsu whats so if you want to dosomething enefneyes pleas goo goehr</p>
-                  </div>
-                  <div class='project-stack px-5 py-5'>
-                    <span>vue</span>
-                    <span>laravel</span>
-                    <span>mysql</span>
-                  </div>
-                </div>
-              </a>
             </div>
           </div>
         </div>

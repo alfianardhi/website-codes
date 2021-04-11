@@ -2,24 +2,35 @@
   "projectListDetail": [
     {
       "id": "123",
-      "title": "Denklik Website",
+      "title": "Denklik Website 01",
       "description": "Loren ipsu whats so if you want to dosomething enefneyes pleas goo goehr",
-      "imageUrl": "assets/images/project-image05.png",
-      "listTech": "vue|laravel|mysql"
+      "imageUrl": "/images/project-image03.png",
+      "listTech": "vue|laravel|mysql",
+      "projectUrl": "http://github.com"
     },
     {
       "id": "234",
-      "title": "Denklik Website",
+      "title": "Denklik Website 02",
       "description": "Loren ipsu whats so if you want to dosomething enefneyes pleas goo goehr",
-      "imageUrl": "assets/images/project-image05.png",
-      "listTech": "vue|laravel|mysql"
+      "imageUrl": "/images/project-image04.png",
+      "listTech": "react|nodejs",
+      "projectUrl": "http://www.abc.com"
     },
     {
       "id": "345",
-      "title": "Denklik Website",
+      "title": "Denklik Website 03",
       "description": "Loren ipsu whats so if you want to dosomething enefneyes pleas goo goehr",
-      "imageUrl": "assets/images/project-image05.png",
-      "listTech": "vue|laravel|mysql"
+      "imageUrl": "/images/project-image05.png",
+      "listTech": "vue|laravel|mysql",
+      "projectUrl": "http://www.abc.com"
+    },
+    {
+      "id": "123",
+      "title": "Denklik Website 05",
+      "description": "Loren ipsu whats so if you want to dosomething enefneyes pleas goo goehr",
+      "imageUrl": "/images/project-image04.png",
+      "listTech": "vue|laravel|mysql",
+      "projectUrl": "http://github.com"
     }
   ]
 }
