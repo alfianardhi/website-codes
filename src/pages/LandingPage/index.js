@@ -13,7 +13,7 @@ class LandingPage extends Component {
   render() {
     return (
       <>
-        <Header {...this.props}></Header>
+        <Header></Header>
         <Hero></Hero>
         <ProjectList data={dataList.projectListDetail}></ProjectList>
         <Experience></Experience>

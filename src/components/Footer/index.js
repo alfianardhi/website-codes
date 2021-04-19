@@ -6,7 +6,7 @@ const Footers = () => (
       <div className='row'>
         <div className='col-lg-12 col-12'>
           <p className='copyright-text text-center'>Made by 🇮🇩 Indonesians independent developer</p>
-          <p className='copyright-text text-center'>Copyright &copy; 2021</p>
+          <p className='copyright-text text-center'>Copyright &copy; {new Date().getFullYear()}</p>
         </div>
       </div>
     </div>

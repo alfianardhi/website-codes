@@ -2,8 +2,8 @@ import React from 'react'
 import Button from 'components/Button'
 import BrandIcon from 'components/IconText'
 
-// TODO: goto section, check bg menu, mobile navigate
-export default function Header(props) {
+// TODO: goto section 36, hedaer menu change to more right, mobile navigate, prjct section be centerd in mbile
+export default function Header() {
   return (
     <nav className='navbar navbar-expand-sm navbar-light'>
       <div className='container'>
@@ -18,36 +18,25 @@ export default function Header(props) {
         <div className='collapse navbar-collapse' id='navbarNav'>
           <ul className='navbar-nav mx-auto'>
             <li className='nav-item'>
-              <Button type='link' href='#about' className='nav-link'>
+              <Button type='link' href='/about' className='nav-link'>
                 <span data-hover='About'>About</span>
               </Button>
             </li>
             <li className='nav-item'>
-              <Button type='link' href='#project' className='nav-link'>
+              <Button type='link' href='/project' className='nav-link'>
                 <span data-hover='Projects'>Projects</span>
               </Button>
             </li>
             <li className='nav-item'>
-              <Button type='link' href='#resume' className='nav-link'>
+              <Button type='link' href='/resume' className='nav-link'>
                 <span data-hover='Resume'>Resume</span>
               </Button>
             </li>
             <li className='nav-item'>
-              <Button type='link' href='#stacks' className='nav-link'>
-                <span data-hover='Stacks'>Stacks</span>
-              </Button>
-            </li>
-            <li className='nav-item'>
-              <Button type='link' href='#contact' className='nav-link'>
+              <Button type='link' href='/contact' className='nav-link'>
                 <span data-hover='Contact'>Contact</span>
               </Button>
             </li>
-          </ul>
-
-          <ul className='navbar-nav ml-lg-auto'>
-            <div className='ml-lg-4'>
-              <div className='color-mode d-lg-flex justify-content-center align-items-center'></div>
-            </div>
           </ul>
         </div>
       </div>
