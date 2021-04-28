@@ -7,10 +7,8 @@ export default function ProjectList(props) {
     <section className='py-5 d-lg-flex justify-content-center align-items-center project-section' id='project'>
       <div className='container'>
         <div className='row'>
-          <div className='col-lg-11 text-center mx-auto col-12'>
-            <div className='col-lg-8 mx-auto'>
-              <h2 className='mb-4 mobile-mt-2'>Things I have developed for various selected project</h2>
-            </div>
+          <div className='col-lg-11 col-12'>
+            <h2 className='mb-4 mobile-mt-2'>Selected Projects</h2>
             <div className='project-list'>
               {props.data.map((item, index) => {
                 let tectStack = item.listTech.split('|')
