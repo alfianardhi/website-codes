@@ -9,7 +9,7 @@ export default function ProjectList(props) {
         <div className='row'>
           <div className='col-lg-11 text-center mx-auto col-12'>
             <div className='col-lg-8 mx-auto'>
-              <h2>Things I have developed for various project</h2>
+              <h2 className='mb-4 mobile-mt-2'>Things I have developed for various selected project</h2>
             </div>
             <div className='project-list'>
               {props.data.map((item, index) => {

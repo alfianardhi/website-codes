@@ -23,14 +23,6 @@
       "imageUrl": "/images/project-image05.png",
       "listTech": "vue|laravel|mysql",
       "projectUrl": "http://www.abc.com"
-    },
-    {
-      "id": "123",
-      "title": "Denklik Website 05",
-      "description": "Loren ipsu whats so if you want to dosomething enefneyes pleas goo goehr",
-      "imageUrl": "/images/project-image04.png",
-      "listTech": "vue|laravel|mysql",
-      "projectUrl": "http://github.com"
     }
   ]
 }

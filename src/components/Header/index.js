@@ -19,7 +19,7 @@ export default function Header() {
           <ul className='navbar-nav mx-auto'>
             <li className='nav-item'>
               <Button type='link' href='/about' className='nav-link'>
-                <span data-hover='About'>About</span>
+                <span data-hover='About'>Home</span>
               </Button>
             </li>
             <li className='nav-item'>
@@ -29,7 +29,7 @@ export default function Header() {
             </li>
             <li className='nav-item'>
               <Button type='link' href='/resume' className='nav-link'>
-                <span data-hover='Resume'>Resume</span>
+                <span data-hover='Resume'>About</span>
               </Button>
             </li>
             <li className='nav-item'>
