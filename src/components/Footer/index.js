@@ -5,7 +5,7 @@ const Footers = () => (
     <div className='container'>
       <div className='row'>
         <div className='col-lg-12 col-12'>
-          <p className='copyright-text text-center'>Made by 🇮🇩 Indonesians independent developer</p>
+          <p className='copyright-text text-center'>Made by 🇮🇩 Indonesians developer</p>
           <p className='copyright-text text-center'>Copyright &copy; {new Date().getFullYear()}</p>
         </div>
       </div>
