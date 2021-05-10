@@ -2,7 +2,7 @@ import React from 'react'
 import Button from 'components/Button'
 import BrandIcon from 'components/IconText'
 
-// TODO: goto section 36, hedaer menu change to more right, mobile navigate, prjct section be centerd in mbile
+// TODO: mobile navigate, prjct section be centerd in mbile, next&sanity
 export default function Header() {
   return (
     <nav className='navbar navbar-expand-sm navbar-light'>
