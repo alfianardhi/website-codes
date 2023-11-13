@@ -11,7 +11,7 @@ export default function Contact() {
               <p>For business inquiry or If you would like to talk, please send email or connect with me on my social media.</p>
               <ul className='social-links'>
                 <li>
-                  <a href='http://www.github.com' className='uil' data-toggle='tooltip' data-placement='left' title='Github'>
+                  <a href='https://github.com/alfianardhi' className='uil' data-toggle='tooltip' data-placement='left' title='Github'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       className='icon icon-tabler icon-tabler-brand-github'
@@ -30,7 +30,7 @@ export default function Contact() {
                   </a>
                 </li>
                 <li>
-                  <a href='http://www.medium.com' className='uil uil-voicemail-rectangle' data-toggle='tooltip' data-placement='left' title='Medium'>
+                  <a href='https://alfianardhidev.medium.com/' className='uil uil-voicemail-rectangle' data-toggle='tooltip' data-placement='left' title='Medium'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       className='icon icon-tabler icon-tabler-brand-medium'
@@ -54,7 +54,7 @@ export default function Contact() {
                   </a>
                 </li>
                 <li>
-                  <a href='http://www.instagram.com' className='uil uil-instagram' data-toggle='tooltip' data-placement='left' title='Instagram'>
+                  <a href='https://www.instagram.com/aalfianardhii/' className='uil uil-instagram' data-toggle='tooltip' data-placement='left' title='Instagram'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       className='icon icon-tabler icon-tabler-brand-instagram'
@@ -75,7 +75,7 @@ export default function Contact() {
                   </a>
                 </li>
                 <li>
-                  <a href='http://www.twitter.com' className='uil uil-voicemail-rectangle' data-toggle='tooltip' data-placement='left' title='Twitter'>
+                  <a href='https://twitter.com/alfianardhiHat' className='uil uil-voicemail-rectangle' data-toggle='tooltip' data-placement='left' title='Twitter'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       className='icon icon-tabler icon-tabler-brand-twitter'
@@ -94,7 +94,7 @@ export default function Contact() {
                   </a>
                 </li>
                 <li>
-                  <a href='http://www.dribbble.com' className='uil uil-dribbble' data-toggle='tooltip' data-placement='left' title='Dribbble'>
+                  <a href='https://dribbble.com/alfianardhi' className='uil uil-dribbble' data-toggle='tooltip' data-placement='left' title='Dribbble'>
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       className='icon icon-tabler icon-tabler-brand-dribbble'
